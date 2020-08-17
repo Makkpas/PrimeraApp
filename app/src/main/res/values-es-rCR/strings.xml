@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrimeraApp</string>
+    <string name="login_text">Iniciar Sesion</string>
+    <string name="go_res">Registrarse</string>
+    <string name="email_Holder">Correo</string>
+    <string name="password_Holder">Contraseña</string>
+
+    <string name="error_email">Se requiere el correo</string>
+    <string name="error_password">Se requiere la contraseña</string>
+    <string name="logged_in">Has iniciado Sesión</string>
+    <string name="name_Holder">Nombre</string>
+    <string name="register_text">Registrarse</string>
+    <string name="goto_login">Ir a iniciar sesión</string>
+    <string name="error_name">Se requiere el nombre</string>
+    <string name="registered">Se ha registrado</string>
+    <string name="no_match">No hay coicidencias</string>
+</resources>
