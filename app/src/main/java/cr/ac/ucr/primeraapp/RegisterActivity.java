@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
-            finish();
+            //finish();
         }else{
             Toast.makeText(this,getString(R.string.no_match), Toast.LENGTH_SHORT).show();
         }
@@ -77,6 +77,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private void gotoLogin(){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 }
