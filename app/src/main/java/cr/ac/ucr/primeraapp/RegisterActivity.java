@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +17,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private EditText etEmail;
     private EditText etPassword;
 
+    Pattern pattern = Patterns.EMAIL_ADDRESS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         }
         //TODO: se tiene que sustituir con la logica de autenticación de la aplicación
-        if( name.equalsIgnoreCase("Alexis") && email.equalsIgnoreCase("admin@email.com") && password.equalsIgnoreCase("123")){
+        if(pattern.matcher(email).matches()){
 
             Toast.makeText(this, getString(R.string.registered), Toast.LENGTH_SHORT);
 
