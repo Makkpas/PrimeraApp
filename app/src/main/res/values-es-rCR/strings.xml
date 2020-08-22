@@ -5,15 +5,23 @@
     <string name="go_res">Registrarse</string>
     <string name="email_Holder">Correo</string>
     <string name="password_Holder">Contraseña</string>
-
-    <string name="error_email">Se requiere el correo</string>
-    <string name="error_password">Se requiere la contraseña</string>
     <string name="logged_in">Has iniciado Sesión</string>
     <string name="name_Holder">Nombre</string>
     <string name="register_text">Registrarse</string>
     <string name="goto_login">Ir a iniciar sesión</string>
-    <string name="error_name">Se requiere el nombre</string>
     <string name="registered">Se ha registrado</string>
+
+
+    <!-- Errors -->
+    <string name="error_email">Se requiere el correo</string>
+    <string name="error_password">Se requiere la contraseña</string>
+    <string name="error_email_format">Invalid email</string>
+    <string name="error_name">Se requiere el nombre</string>
     <string name="no_match">No hay coicidencias</string>
     <string name="logout">Cerrar Sesión</string>
+
+    <!-- Task List -->
+    <string name="task_name">Nombre de la tarea</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
 </resources>
