@@ -12,14 +12,21 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 
 import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.ArrayList;
 
 import cr.ac.ucr.primeraapp.utils.AppPreferences;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
+    private ArrayList<String> todosArr;
+    private ArrayAdapter<String> todosAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +35,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //ListView <---> ArrayAdapter <---> ArrayList
+
+        ListView lvTodos = findViewById(R.id.lv_todos);
+        todosArr = new ArrayList<>();
+
+        todosAdapter = new ArrayAdapter<>(this,  android.R.layout.simple_list_item_1, todosArr);
+
+        lvTodos.setAdapter(todosAdapter);
+
+//        todosArr.add("Hola");
+//        todosArr.add("Mundo");
+
     }
 
     @Override
@@ -80,7 +100,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onClick(DialogInterface dialogInterface, int i) {
                         TextInputEditText etTaskName = view.findViewById(R.id.et_task_name);
 
+                        String taskName = etTaskName.getText().toString();
 
+                        if(!taskName.isEmpty()){
+                            todosArr.add(taskName);
+                            todosAdapter.notifyDataSetChanged();
+                            dialogInterface.dismiss();
+                        }
                     }
                 })
                 .setNegativeButton(R.string.cancel, null);
