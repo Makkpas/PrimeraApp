@@ -27,4 +27,12 @@
     <string name="Yes">Yes</string>
     <string name="clear_list">Clear List</string>
     <string name="want_to_delete_all">Do you want to delete all items in the list</string>
+
+    <string name="my_tasks">My tasks</string>
+    <string name="profile">Profile</string>
+
+    <string name="email_placeholder">admin@email.com</string>
+    <string name="name_placeholder">Alexis Fallas</string>
+    <string name="avatar_description">avatar</string>
+
 </resources>

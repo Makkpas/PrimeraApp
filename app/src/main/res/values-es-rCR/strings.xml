@@ -28,4 +28,12 @@
     <string name="Yes">Si</string>
     <string name="clear_list">Limpiar la lista</string>
     <string name="want_to_delete_all">¿Deseas eliminar todos los elementos de la lista?</string>
+
+
+    <string name="my_tasks">Mis tareas</string>
+    <string name="profile">Perfil</string>
+
+    <string name="email_placeholder">admin@email.com</string>
+    <string name="name_placeholder">Alexis Fallas</string>
+    <string name="avatar_description">avatar</string>
 </resources>
